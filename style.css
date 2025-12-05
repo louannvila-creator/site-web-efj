@@ -1,132 +1,99 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-:root{
-    --bg: #f7f7f8;          
-    --card: #ffffff;        
-    --muted: #1a1a1e;      
-    --shadow: 0 6px 18px rgba(40,40,60,0.08);
-}
-
 body {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #d2cbed;
-    color: #222;
-    line-height: 1.45;
-    padding: 28px;
+    background-color: #e6e0e6;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+
+
+#portrait {
+    width: 250px;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #d2cbed;   
+    padding: 15px;
+    border-radius: 10px;
+    color: #040404;              
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    width: 50%;
+    margin: 0 auto 30px;     
+}
+
+
+.presentation {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ffffff;               
+    padding: 16px 20px;                      
+    border-radius: 8px;                     
+    width: 97%;                             
+    margin-bottom: 30px;                     
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);  
+    border-left: 4px solid #bdb1ec;          
+    text-align: left;                        
+    color: #444;  
+                             
+}
+
+
+h2, h3 {
+    border-left: 4px solid #bdb1ec;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+
+ul {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style-type: none;
+    padding-left: 0;
+    width: 35%;
+    padding-bottom: 10px;
+}
+
+li {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.film-container {
     display: flex;
     justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
 }
 
-/* Conteneur principal */
-.card {
-    width: 100%;
-    max-width: 860px;
-    background: var(--card);
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    overflow: hidden;
-    padding: 20px;
-}
-
-/* En-tête profil */
-.hero {
-    display: flex;
-    gap: 18px;
-    align-items: center;
-    padding-bottom: 14px;
-    border-bottom: 1px solid #eee;
-}
-
-.photo {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
+.film {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 12px;
     border-radius: 10px;
-    flex-shrink: 0;
-    border: 2px solid #f0f0f2;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 200px;
 }
 
-
-.title h1 {
-    font-size: 1.6rem;
-    margin-bottom: 6px;
-    font-weight: 700;
-    color: #111;
-    font-family: Georgia, "Times New Roman", Times, serif; 
-}
-
-.first-name {
-    display: inline-block;
-    font-family: "Georgia", serif;
-    font-weight: 700;
-    font-size: 2rem;
-    letter-spacing: 0.6px;
-    color: var(--accent); /* le prénom ressort en accent doux */
-    margin-right: 6px;
-}
-
-/* sous-titre */
-.sub {
-    color: var(--muted);
-    font-size: 0.95rem;
-}
-
-/* Sections */
-section {
-    margin-top: 18px;
-}
-
-h2 {
-    font-size: 1.05rem;
-    margin-bottom: 8px;
-    color: #222;
-    font-weight: 700;
-}
-
-/* Listes propres */
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.infos ul li,
-.filmography ul li {
-    padding: 8px 0;
-    border-bottom: 1px dashed #f0f0f2;
-    color: var(--muted);
-}
-
-/* Notes */
-.notes p {
-    color: var(--muted);
-    padding: 10px 0;
-}
-
-/* Footer / action simple */
-.actions {
-    margin-top: 18px;
-    text-align: right;
-}
-
-.actions a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 14px;
+.film img {
+    width: 100%;
     border-radius: 8px;
-    background: linear-gradient(180deg, rgba(43,122,120,0.95), rgba(43,122,120,0.9));
-    color: #fff;
-    font-weight: 600;
-    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
-/* Responsive basique */
-@media (max-width: 520px) {
-    .hero { flex-direction: column; align-items: flex-start; gap: 12px; }
-    .photo { width: 100%; height: auto; border-radius: 8px; }
-    .title h1 { font-size: 1.4rem; }
-    .first-name { font-size: 1.6rem; }
+.film-title {
+    margin-top: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: #171717;
 }
